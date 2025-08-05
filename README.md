@@ -1,4 +1,5 @@
 Formulario de Registro con Angular
+
 Este proyecto es un formulario de registro reactivo desarrollado con Angular que implementa validaciones avanzadas y retroalimentación en tiempo real para el usuario.
 
 Características principales
