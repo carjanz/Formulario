@@ -1,4 +1,5 @@
 Formulario de Registro con Validaciones Dinámicas
+
 Descripción del Proyecto
 Este es un formulario de registro interactivo desarrollado con Angular que implementa validaciones avanzadas en tiempo real. El formulario incluye campos para información personal con validaciones específicas para cada tipo de dato.
 
