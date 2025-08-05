@@ -18,7 +18,7 @@ Tecnologías Utilizadas
 
 Instalación
 - bash
-- git clone https://github.com/tu-usuario/formulario-angular.git
+- git clone https://github.com/carjanz/Formulario.git
 - cd formulario-angular
 - npm install
 - ng serve
