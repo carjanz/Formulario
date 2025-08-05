@@ -9,38 +9,22 @@ Características Destacadas
 ✅ Validación de formato para nombres, apellidos y correo electrónico
 ✅ Experiencia de usuario mejorada con estados visuales para campos válidos/inválidos
 
-Vista Previa
-https://i.imgur.com/ejemplo.png (Imagen ilustrativa)
-
 Tecnologías Utilizadas
-Angular 17+
-
-Reactive Forms Module
-
-Validadores personalizados
-
-CSS moderno con variables y anidamiento
-
-TypeScript para la lógica de validación
+- Angular 17+
+- Reactive Forms Module
+- Validadores personalizados
+- CSS moderno con variables y anidamiento
+- TypeScript para la lógica de validación
 
 Instalación
-bash
-git clone https://github.com/tu-usuario/formulario-angular.git
-cd formulario-angular
-npm install
-ng serve
-Estructura del Código
-text
-src/
-├── app/
-│   ├── formulario/
-│   │   ├── formulario.component.ts    # Lógica del formulario
-│   │   ├── formulario.component.html  # Template del formulario
-│   │   └── formulario.component.scss  # Estilos específicos
-│   └── app.module.ts                  # Módulo principal
+- bash
+- git clone https://github.com/tu-usuario/formulario-angular.git
+- cd formulario-angular
+- npm install
+- ng serve
+
 Validaciones Implementadas
-Campo	Validaciones
-Nombre/Apellido	Solo letras y caracteres especiales (ñ, acentos)
-Tipo Documento	Selección obligatoria
-N° Documento	Formato dinámico según tipo seleccionado
-Email	Formato válido de correo electrónico
+- Nombre/Apellido:	Solo letras y caracteres especiales (ñ, acentos)
+- Tipo Documento:	Selección obligatoria
+- N° Documento:	Formato dinámico según tipo seleccionado
+- Email:	Formato válido de correo electrónico
