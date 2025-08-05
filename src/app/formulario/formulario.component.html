@@ -1,0 +1,80 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()" class="form-container">
+  <div class="form-group">
+    <label for="nombre">Nombre*</label>
+    <input type="text" id="nombre" formControlName="nombre">
+
+    @if (formulario.get('nombre')?.touched && formulario.get('nombre')?.errors) {
+      <div class="error-message">
+        @if (formulario.get('nombre')?.errors?.['required']) {
+          <span>El nombre es requerido</span>
+        }
+        @if (formulario.get('nombre')?.errors?.['soloLetras']) {
+          <span>Solo se permiten letras</span>
+        }
+      </div>
+    }
+  </div>
+
+  <div class="form-group">
+    <label for="apellido">Apellido*</label>
+    <input type="text" id="apellido" formControlName="apellido">
+
+    @if (formulario.get('apellido')?.touched && formulario.get('apellido')?.errors) {
+      <div class="error-message">
+        @if (formulario.get('apellido')?.errors?.['required']) {
+          <span>El apellido es requerido</span>
+        }
+        @if (formulario.get('apellido')?.errors?.['soloLetras']) {
+          <span>Solo se permiten letras</span>
+        }
+      </div>
+    }
+  </div>
+
+  <div class="form-group">
+    <label for="tipoDni">Tipo de Documento*</label>
+    <select id="tipoDni" formControlName="tipoDni">
+      <option value="">Seleccione un tipo</option>
+      @for (tipo of tiposDocumento; track tipo.value) {
+        <option [value]="tipo.value">{{tipo.label}}</option>
+      }
+    </select>
+
+    @if (formulario.get('tipoDni')?.touched && formulario.get('tipoDni')?.errors) {
+      <div class="error-message">
+        @if (formulario.get('tipoDni')?.errors?.['required']) {
+          <span>Debe seleccionar un tipo de documento</span>
+        }
+      </div>
+    }
+  </div>
+
+  <div class="form-group">
+    <label for="dni">{{getDniLabel()}}</label>
+    <input type="text" id="dni" formControlName="dni">
+
+    @if (formulario.get('dni')?.touched && formulario.get('dni')?.errors) {
+      <div class="error-message">
+        {{getDniErrorMessage()}}
+      </div>
+    }
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email*</label>
+    <input type="email" id="email" formControlName="email">
+
+    @if (formulario.get('email')?.touched && formulario.get('email')?.errors) {
+      <div class="error-message">
+        @if (formulario.get('email')?.errors?.['required']) {
+          <span>El email es requerido</span>
+        }
+        @if (formulario.get('email')?.errors?.['email']) {
+          <span>Ingrese un email válido</span>
+        }
+      </div>
+    }
+  </div>
+
+  <button type="submit" [disabled]="formulario.invalid">Enviar</button>
+</form>
