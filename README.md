@@ -4,10 +4,15 @@ Descripción del Proyecto
 Este es un formulario de registro interactivo desarrollado con Angular que implementa validaciones avanzadas en tiempo real. El formulario incluye campos para información personal con validaciones específicas para cada tipo de dato.
 
 Características Destacadas
+
 ✅ Validaciones dinámicas que cambian según el tipo de documento seleccionado
+
 ✅ Retroalimentación inmediata al usuario con mensajes de error claros
+
 ✅ Diseño responsive que se adapta a diferentes dispositivos
+
 ✅ Validación de formato para nombres, apellidos y correo electrónico
+
 ✅ Experiencia de usuario mejorada con estados visuales para campos válidos/inválidos
 
 Tecnologías Utilizadas
