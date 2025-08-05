@@ -1,27 +1,68 @@
-# Formulario
+Formulario de Registro con Angular
+Este proyecto es un formulario de registro reactivo desarrollado con Angular que implementa validaciones avanzadas y retroalimentación en tiempo real para el usuario.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+Características principales
+Formulario reactivo con validaciones en tiempo real
 
-## Development server
+Validaciones personalizadas para cada campo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Cambio dinámico de validaciones según el tipo de documento seleccionado
 
-## Code scaffolding
+Mensajes de error claros y específicos para cada caso
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Diseño responsive y accesible
 
-## Build
+Deshabilitación del botón de envío cuando el formulario es inválido
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Campos del formulario
+Nombre:
 
-## Running unit tests
+Validación de solo letras (incluye caracteres especiales en español)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Campo obligatorio
 
-## Running end-to-end tests
+Apellido:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Mismas validaciones que el campo Nombre
 
-## Further help
+Tipo de Documento:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Selección entre DNI, Cédula o Pasaporte
+
+Campo obligatorio
+
+Número de Documento:
+
+Validación dinámica según el tipo de documento seleccionado:
+
+DNI: exactamente 8 dígitos
+
+Cédula: entre 6 y 10 dígitos
+
+Pasaporte: entre 6 y 12 caracteres alfanuméricos
+
+Campo obligatorio
+
+Email:
+
+Validación de formato de email estándar
+
+Campo obligatorio
+
+Tecnologías utilizadas
+Angular 17+
+
+Reactive Forms
+
+Validaciones personalizadas
+
+CSS moderno con anidamiento
+
+Instalación y uso
+Clona el repositorio
+
+Instala las dependencias con npm install
+
+Ejecuta la aplicación con ng serve
+
+Abre tu navegador en http://localhost:4200
